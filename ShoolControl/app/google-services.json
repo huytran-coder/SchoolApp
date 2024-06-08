@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "884899072630",
+    "firebase_url": "https://schoolapp-61098-default-rtdb.firebaseio.com",
+    "project_id": "schoolapp-61098",
+    "storage_bucket": "schoolapp-61098.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884899072630:android:6d5c2fab2ddf35462e2d57",
+        "android_client_info": {
+          "package_name": "com.example.shoolcontrol"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZP7ZpvLXbX4PoHe4jJaHyEw3AbcNt-uU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ececec"
+    tools:context=".Device.Gate">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/gate_on" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/gate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="         "
+            android:textOn="on"
+            android:textOff="off"
+            app:showText="true"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:thumb="@drawable/switch_thump"
+            app:track="@drawable/switch_track"
+            />
+    </LinearLayout>
+  <TextView
+      android:id="@+id/gatestatus"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
+      android:text="Cổng đang đóng"
+      android:textColor="@color/black"
+      android:textSize="30dp"
+      android:gravity="center"
+      />
+
+</LinearLayout>

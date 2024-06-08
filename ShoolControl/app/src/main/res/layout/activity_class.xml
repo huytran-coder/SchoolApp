@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ececec"
+    android:layout_margin="5dp"
+    tools:context=".Device.Class">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/lightclass"
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/light_off" />
+
+        <androidx.appcompat.widget.SwitchCompat
+
+            android:id="@+id/lightclasson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="         "
+            android:textOn="on"
+            android:textOff="off"
+            app:showText="true"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:thumb="@drawable/switch_thump"
+            app:track="@drawable/switch_track"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/lightfan"
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+
+            android:layout_marginStart="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/fan" />
+
+        <androidx.appcompat.widget.SwitchCompat
+
+            android:id="@+id/onfan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="         "
+            android:textOn="on"
+            android:textOff="off"
+            app:showText="true"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:thumb="@drawable/switch_thump"
+            app:track="@drawable/switch_track"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Bật quạt khi đạt"
+            android:textColor="@color/black"
+            android:textSize="22dp"/>
+        <EditText
+            android:id="@+id/fan_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:inputType="number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="°C "
+            android:textColor="@color/black"
+            android:textSize="22dp"/>
+
+        <Button
+            android:id="@+id/setFantButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đặt"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bật đèn vào lúc"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            />
+        <EditText
+            android:id="@+id/hourEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:inputType="number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="h"
+            android:textSize="22dp"/>
+        <EditText
+            android:id="@+id/minuteEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:inputType="number"/>
+
+
+        <Button
+            android:id="@+id/setLightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đặt"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tắt đèn vào lúc"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            />
+        <EditText
+            android:id="@+id/houroffEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:inputType="number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="h"
+            android:textSize="22dp"/>
+        <EditText
+            android:id="@+id/minuteEditTextOFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/setLightButtonOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đặt"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
